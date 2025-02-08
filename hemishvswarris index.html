@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxing Betting - Warris Singh vs Hemish Gurnani</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Boxing Betting</h1>
+        <h2>Warris Singh vs Hemish Gurnani</h2>
+        <p>Date: 13th June, 2024 | Location: Muay Thai Phetchbuncha Boxing Stadium, Koh Samui</p>
+    </header>
+
+    <main>
+        <section id="betting-options">
+            <div class="fighter">
+                <h3>Warris Singh</h3>
+                <p>Odds: 1.85</p>
+                <input type="number" id="warris-bet" placeholder="Enter bet amount (min $1)" min="1">
+                <button onclick="placeBet('Warris Singh', 1.85)">Place Bet</button>
+            </div>
+            <div class="fighter">
+                <h3>Hemish Gurnani</h3>
+                <p>Odds: 2.17</p>
+                <input type="number" id="hemish-bet" placeholder="Enter bet amount (min $1)" min="1">
+                <button onclick="placeBet('Hemish Gurnani', 2.17)">Place Bet</button>
+            </div>
+        </section>
+
+        <section id="bet-slip">
+            <h3>Your Bet Slip</h3>
+            <div id="bet-slip-content">
+                <!-- Bet slip content will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Boxing Betting. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
